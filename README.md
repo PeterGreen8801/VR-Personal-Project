@@ -1,1 +1,2 @@
-# VR-Personal-Project
+# VR Personal Project
+Basic Burger Maker
