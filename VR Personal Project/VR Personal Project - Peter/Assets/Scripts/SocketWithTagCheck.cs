@@ -23,3 +23,4 @@ public class SocketWithTagCheck : XRSocketInteractor
         return interactable.CompareTag(targetTag);
     }
 }
+
