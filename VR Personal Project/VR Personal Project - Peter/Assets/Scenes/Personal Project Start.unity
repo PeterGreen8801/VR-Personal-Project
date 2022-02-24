@@ -1476,8 +1476,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 207636554}
-        m_TargetAssemblyTypeName: PlayQuickSound, Assembly-CSharp
+      - m_Target: {fileID: 207636555}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -1547,7 +1547,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3449,7 +3449,6 @@ GameObject:
   - component: {fileID: 517173944}
   - component: {fileID: 517173943}
   - component: {fileID: 517173946}
-  - component: {fileID: 517173945}
   m_Layer: 0
   m_Name: Socket 6
   m_TagString: Untagged
@@ -3499,8 +3498,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 517173945}
-        m_TargetAssemblyTypeName: PlayQuickSound, Assembly-CSharp
+      - m_Target: {fileID: 517173946}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -3545,21 +3544,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.19119442
   m_Center: {x: -0.30880558, y: 0, z: 0}
---- !u!114 &517173945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517173941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0755a2ba17a31d643b4a27e3034d8a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
-  volume: 1
-  randomPitchVariance: 0.223
 --- !u!82 &517173946
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3570,7 +3554,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4379,7 +4363,6 @@ GameObject:
   - component: {fileID: 686259032}
   - component: {fileID: 686259031}
   - component: {fileID: 686259034}
-  - component: {fileID: 686259033}
   m_Layer: 0
   m_Name: Socket 2
   m_TagString: Untagged
@@ -4429,8 +4412,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 686259033}
-        m_TargetAssemblyTypeName: PlayQuickSound, Assembly-CSharp
+      - m_Target: {fileID: 686259034}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -4475,21 +4458,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.19119442
   m_Center: {x: -0.30880558, y: 0, z: 0}
---- !u!114 &686259033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 686259029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0755a2ba17a31d643b4a27e3034d8a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
-  volume: 1
-  randomPitchVariance: 0.05
 --- !u!82 &686259034
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4500,7 +4468,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5285,7 +5253,6 @@ GameObject:
   - component: {fileID: 1081163176}
   - component: {fileID: 1081163175}
   - component: {fileID: 1081163178}
-  - component: {fileID: 1081163177}
   m_Layer: 0
   m_Name: Socket 3
   m_TagString: Untagged
@@ -5335,8 +5302,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1081163177}
-        m_TargetAssemblyTypeName: PlayQuickSound, Assembly-CSharp
+      - m_Target: {fileID: 1081163178}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -5381,21 +5348,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.19119442
   m_Center: {x: -0.30880558, y: 0, z: 0}
---- !u!114 &1081163177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081163173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0755a2ba17a31d643b4a27e3034d8a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
-  volume: 1
-  randomPitchVariance: 0.199
 --- !u!82 &1081163178
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5406,7 +5358,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6869,7 +6821,6 @@ GameObject:
   - component: {fileID: 1610152384}
   - component: {fileID: 1610152383}
   - component: {fileID: 1610152386}
-  - component: {fileID: 1610152385}
   m_Layer: 0
   m_Name: Socket 5
   m_TagString: Untagged
@@ -6919,8 +6870,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1610152385}
-        m_TargetAssemblyTypeName: PlayQuickSound, Assembly-CSharp
+      - m_Target: {fileID: 1610152386}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -6965,21 +6916,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.19119442
   m_Center: {x: -0.30880558, y: 0, z: 0}
---- !u!114 &1610152385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610152381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0755a2ba17a31d643b4a27e3034d8a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
-  volume: 1
-  randomPitchVariance: 0.062
 --- !u!82 &1610152386
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6990,7 +6926,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7260,7 +7196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666926375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0394521, y: -1.0223546, z: -0.62610126}
+  m_LocalPosition: {x: -1.042, y: -1.018, z: -0.62610126}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 604136071}
@@ -7423,8 +7359,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1708357048}
-        m_TargetAssemblyTypeName: PlayQuickSound, Assembly-CSharp
+      - m_Target: {fileID: 1708357049}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -7478,12 +7414,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1708357044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0755a2ba17a31d643b4a27e3034d8a79, type: 3}
+  m_Script: {fileID: 11500000, guid: b56684aba41be06468cf3931aa42d7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
-  volume: 1
-  randomPitchVariance: 0
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!82 &1708357049
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7494,7 +7430,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9e41771b050c39b49ac59174861e4506, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -9933,6 +9869,34 @@ PrefabInstance:
       propertyPath: m_InteractionLayerMask.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 3291349647553812276, guid: de006068da72831429a86d60d34e6133, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291349647553812276, guid: de006068da72831429a86d60d34e6133, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291349647553812276, guid: de006068da72831429a86d60d34e6133, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 351530400}
+    - target: {fileID: 3291349647553812276, guid: de006068da72831429a86d60d34e6133, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291349647553812276, guid: de006068da72831429a86d60d34e6133, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291349647553812276, guid: de006068da72831429a86d60d34e6133, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291349647553812276, guid: de006068da72831429a86d60d34e6133, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7456061047866642811, guid: de006068da72831429a86d60d34e6133, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -9995,7 +9959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7456061047866642815, guid: de006068da72831429a86d60d34e6133, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de006068da72831429a86d60d34e6133, type: 3}
