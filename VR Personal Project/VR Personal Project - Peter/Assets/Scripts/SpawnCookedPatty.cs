@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnUncookedPatty : MonoBehaviour
+public class SpawnCookedPatty : MonoBehaviour
 {
     public GameObject originalObject;
     public Transform spawnPosition;
