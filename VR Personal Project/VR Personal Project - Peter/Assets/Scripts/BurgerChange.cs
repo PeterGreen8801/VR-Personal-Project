@@ -9,6 +9,8 @@ public class BurgerChange : MonoBehaviour
     public GameObject cooked;
     private Vector3 posA = Vector3.zero;
     private Vector3 posB = Vector3.zero;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,7 @@ public class BurgerChange : MonoBehaviour
         posA = uncooked.gameObject.transform.position;
         posB = cooked.gameObject.transform.position;
         Destroy(uncooked);
-        Instantiate(cooked, posA, Quaternion.identity);
+
+
     }
 }
