@@ -5,11 +5,24 @@ using UnityEngine;
 public class DeSpawn : MonoBehaviour
 {
     [Tooltip("Time before destroying in seconds")]
-    public float lifeTime = 5.0f;
+    public float lifeTime = 2.0f;
 
+    public bool destroy = true;
+
+
+    public void Go()
+    {
+        Destroy(this.gameObject);
+
+    }
+
+    public void SetActive()
+    {
+        this.gameObject.SetActive(false);
+    }
 
     public void Despawn()
     {
-        Destroy(gameObject, lifeTime);
+        Destroy(this.gameObject.transform);
     }
 }
