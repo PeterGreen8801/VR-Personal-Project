@@ -1819,7 +1819,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.19119442
+  m_Radius: 0.15
   m_Center: {x: -0.30880558, y: 0, z: 0}
 --- !u!114 &207636554
 MonoBehaviour:
@@ -4046,7 +4046,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.19119442
+  m_Radius: 0.15
   m_Center: {x: -0.30880558, y: 0, z: 0}
 --- !u!82 &517173946
 AudioSource:
@@ -4990,7 +4990,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.19119442
+  m_Radius: 0.15
   m_Center: {x: -0.30880558, y: 0, z: 0}
 --- !u!82 &686259034
 AudioSource:
@@ -6166,7 +6166,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.19119442
+  m_Radius: 0.15
   m_Center: {x: -0.30880558, y: 0, z: 0}
 --- !u!82 &1081163178
 AudioSource:
@@ -8151,7 +8151,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.19119442
+  m_Radius: 0.15
   m_Center: {x: -0.30880558, y: 0, z: 0}
 --- !u!82 &1610152386
 AudioSource:
@@ -8551,6 +8551,7 @@ GameObject:
   - component: {fileID: 1708357046}
   - component: {fileID: 1708357049}
   - component: {fileID: 1708357050}
+  - component: {fileID: 1708357048}
   m_Layer: 0
   m_Name: Socket 1
   m_TagString: Untagged
@@ -8614,7 +8615,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1708357048}
+        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -8644,8 +8657,24 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.19119442
+  m_Radius: 0.15
   m_Center: {x: -0.30880558, y: 0, z: 0}
+--- !u!114 &1708357048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708357044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c703e3d4719dcd4a8801e751246b6ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spawnpoint: {fileID: 13608914}
+  Prefab: {fileID: 635517356886585385, guid: 0213ad708ba9ae1439841942fc86bbf1, type: 3}
+  nextSpawnTime: 0
+  spawnDelay: 5
 --- !u!82 &1708357049
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9817,7 +9846,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 73fe6f8dbb7a64c96a1d52f467088b5d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.65
+  m_Volume: 0.55
   m_Pitch: 1
   Loop: 0
   Mute: 0
