@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Grill
+  - uncooked
+  - cooked
+  - nothing
   layers:
   - Default
   - TransparentFX

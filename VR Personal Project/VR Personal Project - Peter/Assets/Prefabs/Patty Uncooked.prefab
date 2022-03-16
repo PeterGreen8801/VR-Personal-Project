@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 7456061047866642813}
   - component: {fileID: 3291349647553812276}
   - component: {fileID: 351530402}
-  - component: {fileID: 6560748823138464059}
+  - component: {fileID: 6849862378601480261}
   m_Layer: 15
   m_Name: Patty Uncooked
-  m_TagString: Untagged
+  m_TagString: nothing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,7 +219,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &6560748823138464059
+--- !u!114 &6849862378601480261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,8 +228,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7456061047866642815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afeb3ce426846d48842c559d9ddbeb4, type: 3}
+  m_Script: {fileID: 11500000, guid: 49540ed092978204eb56a2ce9681adb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 2
-  destroy: 1
+  Prefab: {fileID: 7456061047866642815}

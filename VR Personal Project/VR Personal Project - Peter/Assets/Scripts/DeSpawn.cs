@@ -9,6 +9,8 @@ public class DeSpawn : MonoBehaviour
 
     public bool destroy = true;
 
+    public GameObject Prefab;
+
 
     public void Go()
     {
@@ -23,6 +25,14 @@ public class DeSpawn : MonoBehaviour
 
     public void Despawn()
     {
-        Destroy(this.gameObject.transform);
+        //Destroy(this.gameObject.transform);
+
+        //Destroy(this.gameObject);
+        //GameObject a = Instantiate(this.gameObject, this.gameObject.transform.position, Quaternion.identity);
+        //Destroy(a);
+
+        var prefabInstance = Instantiate(Prefab, Prefab.transform.position, Quaternion.identity);
+        Destroy(prefabInstance);
+        Destroy(GameObject.FindGameObjectWithTag("uncooked"));
     }
 }
