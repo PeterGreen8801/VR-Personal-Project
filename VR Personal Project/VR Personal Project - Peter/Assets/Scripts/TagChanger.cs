@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.XR.Interaction.Toolkit;
 public class TagChanger : MonoBehaviour
 {
     public GameObject Prefab;
+
+
 
     void Start()
     {
@@ -18,6 +20,7 @@ public class TagChanger : MonoBehaviour
         {
             Prefab.gameObject.tag = "uncooked";
             Debug.Log(Prefab.gameObject.tag + ": Tag was changed to");
+
         }
 
     }

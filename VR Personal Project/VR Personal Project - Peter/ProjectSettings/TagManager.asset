@@ -8,6 +8,7 @@ TagManager:
   - uncooked
   - cooked
   - nothing
+  - placeholder
   layers:
   - Default
   - TransparentFX
