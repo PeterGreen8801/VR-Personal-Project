@@ -31,8 +31,8 @@ public class DeSpawn : MonoBehaviour
         //GameObject a = Instantiate(this.gameObject, this.gameObject.transform.position, Quaternion.identity);
         //Destroy(a);
 
-        var prefabInstance = Instantiate(Prefab, Prefab.transform.position, Quaternion.identity);
-        Destroy(prefabInstance);
+        //var prefabInstance = Instantiate(Prefab, Prefab.transform.position, Quaternion.identity);
+        //Destroy(prefabInstance);
         Destroy(GameObject.FindGameObjectWithTag("uncooked"));
     }
 }

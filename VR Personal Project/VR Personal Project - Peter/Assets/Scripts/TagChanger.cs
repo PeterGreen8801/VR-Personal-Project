@@ -9,6 +9,7 @@ public class TagChanger : MonoBehaviour
     void Start()
     {
         Prefab.gameObject.tag = "nothing";
+        Debug.Log(Prefab.gameObject.tag + ": Tag was changed to");
     }
 
     public void OnTriggerEnter(Collider other)
