@@ -5,7 +5,7 @@ using UnityEngine;
 public class DeSpawn : MonoBehaviour
 {
     [Tooltip("Time before destroying in seconds")]
-    public float lifeTime = 2.0f;
+    public float lifeTime = 5f;
 
     public bool destroy = true;
 
@@ -33,6 +33,6 @@ public class DeSpawn : MonoBehaviour
 
         //var prefabInstance = Instantiate(Prefab, Prefab.transform.position, Quaternion.identity);
         //Destroy(prefabInstance);
-        Destroy(GameObject.FindGameObjectWithTag("uncooked"));
+        Destroy(GameObject.FindGameObjectWithTag("uncooked"), lifeTime);
     }
 }

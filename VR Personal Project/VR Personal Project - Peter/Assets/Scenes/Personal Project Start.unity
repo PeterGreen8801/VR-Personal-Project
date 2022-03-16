@@ -6853,7 +6853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afeb3ce426846d48842c559d9ddbeb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 2
+  lifeTime: 5
   destroy: 1
   Prefab: {fileID: 7456061047866642815, guid: de006068da72831429a86d60d34e6133, type: 3}
 --- !u!1 &1227577560
