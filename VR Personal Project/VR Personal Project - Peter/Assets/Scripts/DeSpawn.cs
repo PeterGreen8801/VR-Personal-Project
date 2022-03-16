@@ -11,6 +11,8 @@ public class DeSpawn : MonoBehaviour
 
     public GameObject Prefab;
 
+    public float spawnDelay = 5f;
+
     public void Go()
     {
         Destroy(this.gameObject);
@@ -40,6 +42,16 @@ public class DeSpawn : MonoBehaviour
             Destroy(GameObject.FindGameObjectWithTag("uncooked"), lifeTime);
         }
         */
-        Destroy(GameObject.FindGameObjectWithTag("uncooked"));
+
+
+        //Destroy(GameObject.FindGameObjectWithTag("uncooked"));
+
+        IEnumerator Wait()
+        {
+
+            yield return new WaitForSeconds(spawnDelay);
+            Destroy(GameObject.FindGameObjectWithTag("uncooked"));
+        }
+        StartCoroutine(Wait());
     }
 }

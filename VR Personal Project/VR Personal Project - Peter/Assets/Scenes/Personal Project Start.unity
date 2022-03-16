@@ -5121,7 +5121,7 @@ MonoBehaviour:
   Spawnpoint: {fileID: 1152952315}
   Prefab: {fileID: 635517356886585385, guid: 0213ad708ba9ae1439841942fc86bbf1, type: 3}
   nextSpawnTime: 0
-  spawnDelay: 0
+  spawnDelay: 3
 --- !u!82 &686259034
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6842,6 +6842,7 @@ MonoBehaviour:
   lifeTime: 5
   destroy: 1
   Prefab: {fileID: 7456061047866642815, guid: de006068da72831429a86d60d34e6133, type: 3}
+  spawnDelay: 2.8
 --- !u!1 &1227577560
 GameObject:
   m_ObjectHideFlags: 0
@@ -8861,7 +8862,7 @@ MonoBehaviour:
   Spawnpoint: {fileID: 13608914}
   Prefab: {fileID: 635517356886585385, guid: 0213ad708ba9ae1439841942fc86bbf1, type: 3}
   nextSpawnTime: 0
-  spawnDelay: 0
+  spawnDelay: 3
 --- !u!82 &1708357049
 AudioSource:
   m_ObjectHideFlags: 0
