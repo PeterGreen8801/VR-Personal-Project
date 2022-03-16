@@ -11,7 +11,6 @@ public class DeSpawn : MonoBehaviour
 
     public GameObject Prefab;
 
-
     public void Go()
     {
         Destroy(this.gameObject);
@@ -33,6 +32,14 @@ public class DeSpawn : MonoBehaviour
 
         //var prefabInstance = Instantiate(Prefab, Prefab.transform.position, Quaternion.identity);
         //Destroy(prefabInstance);
-        Destroy(GameObject.FindGameObjectWithTag("uncooked"), lifeTime);
+
+        /*
+        Prefab = GameObject.FindGameObjectsWithTag("uncooked");
+        foreach (GameObject uncookedPatty in Prefab)
+        {
+            Destroy(GameObject.FindGameObjectWithTag("uncooked"), lifeTime);
+        }
+        */
+        Destroy(GameObject.FindGameObjectWithTag("uncooked"));
     }
 }

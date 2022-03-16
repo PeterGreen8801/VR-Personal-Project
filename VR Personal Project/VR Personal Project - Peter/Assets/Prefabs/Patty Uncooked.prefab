@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7456061047866642813}
   - component: {fileID: 3291349647553812276}
   - component: {fileID: 351530402}
-  - component: {fileID: 6849862378601480261}
+  - component: {fileID: -4315734695459306313}
   m_Layer: 15
   m_Name: Patty Uncooked
   m_TagString: nothing
@@ -219,7 +219,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &6849862378601480261
+--- !u!114 &-4315734695459306313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
