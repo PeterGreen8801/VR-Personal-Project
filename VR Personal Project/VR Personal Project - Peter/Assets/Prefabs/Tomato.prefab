@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5265379845837056811}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 7569793097108114042}
   - component: {fileID: 2663045677081951516}
   - component: {fileID: 1690220062297460672}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Tomato Socket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 7433237015105021130}
   - component: {fileID: 4138037445909523841}
   - component: {fileID: 8456439704860563003}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
