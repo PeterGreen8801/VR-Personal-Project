@@ -1991,6 +1991,10 @@ GameObject:
   - component: {fileID: 207636552}
   - component: {fileID: 207636555}
   - component: {fileID: 207636554}
+  - component: {fileID: 207636556}
+  - component: {fileID: 207636557}
+  - component: {fileID: 207636558}
+  - component: {fileID: 207636559}
   m_Layer: 0
   m_Name: Socket 4
   m_TagString: Grill
@@ -2055,6 +2059,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1225610014}
         m_TargetAssemblyTypeName: DeSpawn, Assembly-CSharp
         m_MethodName: Despawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 207636556}
+        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 207636557}
+        m_TargetAssemblyTypeName: DespawnPlaceholder, Assembly-CSharp
+        m_MethodName: DespawnPlace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 207636558}
+        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
+        m_MethodName: Spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2209,6 +2249,64 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &207636556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207636550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c703e3d4719dcd4a8801e751246b6ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spawnpoint: {fileID: 352548241}
+  Prefab: {fileID: 7456061047866642815, guid: 6a445a822bc1f3b47b33c61aa24f2d6e, type: 3}
+  nextSpawnTime: 0
+  spawnDelay: 0
+--- !u!114 &207636557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207636550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952f426da2b70ff4fb9ee8bfe7413dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnDelay: 2.9
+--- !u!114 &207636558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207636550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c703e3d4719dcd4a8801e751246b6ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spawnpoint: {fileID: 352548241}
+  Prefab: {fileID: 635517356886585385, guid: 0213ad708ba9ae1439841942fc86bbf1, type: 3}
+  nextSpawnTime: 0
+  spawnDelay: 3
+--- !u!114 &207636559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207636550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2521c48a47c0ce541b285dcabb0f62d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableDelay: 5
 --- !u!1 &216921635 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3025076018314269778, guid: b2ac101aab5752749b85dbca153aab48, type: 3}
@@ -19552,9 +19650,10 @@ GameObject:
   - component: {fileID: 1610152384}
   - component: {fileID: 1610152383}
   - component: {fileID: 1610152386}
+  - component: {fileID: 1610152385}
   m_Layer: 0
   m_Name: Socket 5
-  m_TagString: Untagged
+  m_TagString: Grill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19647,6 +19746,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.15
   m_Center: {x: -0.30880558, y: 0, z: 0}
+--- !u!114 &1610152385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610152381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afeb3ce426846d48842c559d9ddbeb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 5
+  destroy: 1
+  Prefab: {fileID: 7456061047866642815, guid: de006068da72831429a86d60d34e6133, type: 3}
+  spawnDelay: 2.8
 --- !u!82 &1610152386
 AudioSource:
   m_ObjectHideFlags: 0

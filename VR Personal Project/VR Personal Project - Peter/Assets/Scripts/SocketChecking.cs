@@ -34,4 +34,16 @@ public class SocketChecking : MonoBehaviour
         }
         StartCoroutine(Wait());
     }
+
+    public void turnOff()
+    {
+        socket.enabled = false;
+    }
+
+    public void turnOn()
+    {
+        socket.enabled = true;
+    }
+
+
 }
