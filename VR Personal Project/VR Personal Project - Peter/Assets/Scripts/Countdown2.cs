@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Countdown : MonoBehaviour
+public class Countdown2 : MonoBehaviour
 {
     public float currentTime = 0f;
     public float startingTime = 5f;
@@ -51,26 +51,8 @@ public class Countdown : MonoBehaviour
 
     void Update()
     {
-        if (timerIsRunning)
-        {
-            if (holderPicker == 1)
-            {
-                textHolder.SetActive(true);
-                currentTime = currentTime - 1 * Time.deltaTime;
-                countdownText.text = currentTime.ToString("0");
-
-                if (currentTime <= 0)
-                {
-                    currentTime = startingTime;
-                    textHolder.SetActive(false);
-                    timerIsRunning = false;
-                }
-            }
 
 
-
-        }
-        /*
         if (timer2IsRunning)
         {
             if (holderPicker == 2)
@@ -87,7 +69,6 @@ public class Countdown : MonoBehaviour
                 }
             }
         }
-        */
     }
 
 
@@ -99,12 +80,11 @@ public class Countdown : MonoBehaviour
             timerIsRunning = true;
             holderPicker = textHolderToUse;
         }
-        /*
         if (textHolderToUse == 2)
         {
             timer2IsRunning = true;
             holderPicker = textHolderToUse;
-        }*/
+        }
 
 
     }
