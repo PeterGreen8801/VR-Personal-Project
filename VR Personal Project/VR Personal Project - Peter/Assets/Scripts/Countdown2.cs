@@ -51,8 +51,6 @@ public class Countdown2 : MonoBehaviour
 
     void Update()
     {
-
-
         if (timer2IsRunning)
         {
             if (holderPicker == 2)
