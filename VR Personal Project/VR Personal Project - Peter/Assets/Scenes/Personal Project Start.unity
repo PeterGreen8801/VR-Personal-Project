@@ -17575,14 +17575,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentTime: 0
   startingTime: 5
-  currentTime2: 0
   timerIsRunning: 0
-  timer2IsRunning: 0
-  holderPicker: 0
   countdownText: {fileID: 256004279}
-  countdownText2: {fileID: 2112896345}
   textHolder: {fileID: 2143467364}
-  textHolder2: {fileID: 624205658}
 --- !u!114 &880576094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22004,7 +21999,7 @@ MonoBehaviour:
       - m_Target: {fileID: 880576093}
         m_TargetAssemblyTypeName: Countdown, Assembly-CSharp
         m_MethodName: startTimer
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
