@@ -20,6 +20,8 @@ public class DestroyWithTag : MonoBehaviour
     public void Destroy()
     {
         burgerToDestroy = GameObject.FindGameObjectWithTag("uncooked");
+        
+
         Object.Destroy(burgerToDestroy);
     }
 }
