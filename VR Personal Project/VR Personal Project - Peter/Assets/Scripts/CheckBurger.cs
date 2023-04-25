@@ -6,24 +6,55 @@ public class CheckBurger : MonoBehaviour
 {
 
     public float currentTime = 0f;
-    public float startingTime = 5f;
+    public float startingTime = 3f;
 
     public bool timerIsRunning = false;
+
+    public bool bunCheck;
+    public bool topBunCheck;
+    public bool lettuceCheck;
+    public bool tomatoCheck;
+    public bool cheeseCheck;
+    public bool completepattyCheck;
+
+    public bool startChecking;
+    public bool correctOrder;
+
 
     void Start()
     {
         currentTime = startingTime;
+        startChecking = false;
+        completepattyCheck = false;
+        cheeseCheck = false;
+        tomatoCheck = false;
+        lettuceCheck = false;
+        topBunCheck = false;
+        bunCheck = false;
+        correctOrder = false;
     }
 
     void Update()
     {
         if (timerIsRunning)
         {
+            if (completepattyCheck && cheeseCheck && tomatoCheck && lettuceCheck && topBunCheck && bunCheck)
+            {
+                Debug.Log("All are true at the same time. Order right!");
+            }
             currentTime = currentTime - 1 * Time.deltaTime;
             if (currentTime <= 0)
             {
                 currentTime = startingTime;
                 timerIsRunning = false;
+                startChecking = false;
+
+                completepattyCheck = false;
+                cheeseCheck = false;
+                tomatoCheck = false;
+                lettuceCheck = false;
+                topBunCheck = false;
+                bunCheck = false;
             }
         }
 
@@ -32,25 +63,59 @@ public class CheckBurger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Lettuce")
+
+        if (other.tag == "Complete Burger")
         {
-            Debug.Log("It hit lettuce!");
+            Debug.Log("It hit complete burger");
+            completepattyCheck = true;
+            startChecking = true;
+            startTimer();
         }
-        if (other.tag == "Tomato")
+
+    }
+
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Complete Lettuce")
         {
-            Debug.Log("It hit tomato!");
+            if (startChecking)
+            {
+                lettuceCheck = true;
+            }
+
         }
-        if (other.tag == "Cheese")
+        if (other.tag == "Complete Tomato")
         {
-            Debug.Log("It hit cheese");
+            if (startChecking)
+            {
+                tomatoCheck = true;
+            }
+
+        }
+        if (other.tag == "Complete Cheese")
+        {
+            if (startChecking)
+            {
+                cheeseCheck = true;
+            }
+
         }
         if (other.tag == "Top Bun")
         {
-            Debug.Log("It hit top bun");
+            if (startChecking)
+            {
+                topBunCheck = true;
+            }
+
         }
         if (other.tag == "Bun")
         {
-            Debug.Log("It hit bun");
+            if (startChecking)
+            {
+                bunCheck = true;
+            }
+
         }
     }
 

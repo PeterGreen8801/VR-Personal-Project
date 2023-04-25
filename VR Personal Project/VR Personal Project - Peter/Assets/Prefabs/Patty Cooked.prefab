@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1831368078}
   m_Layer: 15
   m_Name: Patty Cooked
-  m_TagString: Untagged
+  m_TagString: Patty Cooked
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 1475652036917429783}
   - component: {fileID: 2333151458288961469}
   - component: {fileID: 4428021867946736213}
+  - component: {fileID: 6282102665998971836}
   m_Layer: 0
   m_Name: Patty Socket
   m_TagString: Untagged
@@ -313,6 +314,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0.7729304}
+--- !u!114 &6282102665998971836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3220897109673281924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed6afed5752a1c846a84b01b78786e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  socketInteractor: {fileID: 2333151458288961469}
+  attachedObject: {fileID: 3090302232154364230, guid: fa3d53a1b6d35fe48a3fdd503508553e, type: 3}
+  targetObject: {fileID: 3090302232154364230, guid: fa3d53a1b6d35fe48a3fdd503508553e, type: 3}
 --- !u!1 &4531112760466297028
 GameObject:
   m_ObjectHideFlags: 0

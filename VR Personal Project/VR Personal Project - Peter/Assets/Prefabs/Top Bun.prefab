@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 3090302232154364237}
   m_Layer: 15
   m_Name: Top Bun
-  m_TagString: Untagged
+  m_TagString: Top Bun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 3090302232400294265}
   - component: {fileID: 3090302232400294267}
   - component: {fileID: 3090302232400294264}
+  - component: {fileID: 5637488098270389369}
   m_Layer: 0
   m_Name: Lettuce Socket
   m_TagString: Untagged
@@ -345,6 +346,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &5637488098270389369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090302232400294270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e799f8f1bd2be4494065b61efead8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  socketInteractor: {fileID: 3090302232400294264}
+  attachedObject: {fileID: 8222110275683872578, guid: 716cf228cadcc7e4faf1e4ebde21c6b5, type: 3}
 --- !u!1 &3863111186642199242
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +371,7 @@ GameObject:
   - component: {fileID: 3863111186642199237}
   - component: {fileID: 3863111186642199239}
   - component: {fileID: 3863111186642199236}
+  - component: {fileID: 2134436262788348948}
   m_Layer: 0
   m_Name: 'Cheese Socket '
   m_TagString: Untagged
@@ -439,6 +455,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &2134436262788348948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3863111186642199242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614f5647b0a589446bc2878952c5f51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  socketInteractor: {fileID: 3863111186642199236}
+  attachedObject: {fileID: 2193611799806429639, guid: d3e3d8a57a0e2304c8609b5d71e40a01, type: 3}
 --- !u!1 &3863111186667161528
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +510,7 @@ GameObject:
   - component: {fileID: 3863111187113314381}
   - component: {fileID: 3863111187113314383}
   - component: {fileID: 3863111187113314380}
+  - component: {fileID: 8943157240634638952}
   m_Layer: 0
   m_Name: Tomato Socket
   m_TagString: Untagged
@@ -563,6 +594,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &8943157240634638952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3863111187113314386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407af05fa9ef76748a8fa95c42de37b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  socketInteractor: {fileID: 3863111187113314380}
+  attachedObject: {fileID: 7138318424414251421, guid: 939ea6f34820e484682a210aa6b631fb, type: 3}
 --- !u!1 &3863111188307183185
 GameObject:
   m_ObjectHideFlags: 0

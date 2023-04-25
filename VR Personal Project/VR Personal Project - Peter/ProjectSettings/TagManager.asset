@@ -9,6 +9,14 @@ TagManager:
   - cooked
   - nothing
   - placeholder
+  - Lettuce
+  - Tomato
+  - Cheese
+  - Top Bun
+  - Bun
+  - Patty Cooked
+  - Complete Burger
+  - Complete Lettuce
   layers:
   - Default
   - TransparentFX
