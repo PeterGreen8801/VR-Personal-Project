@@ -8,8 +8,6 @@ public class CompleteBurger : MonoBehaviour
     public XRSocketInteractor socketInteractor;
     public GameObject attachedObject;
 
-    //public GameObject targetObject;
-
     [System.Obsolete]
     private void Start()
     {
@@ -21,12 +19,6 @@ public class CompleteBurger : MonoBehaviour
     {
         if (socketInteractor.selectTarget != null)
         {
-            /*
-            attachedObject = socketInteractor.selectTarget.gameObject;
-            if (attachedObject == targetObject)
-            {
-                // Do something with the attached object
-            } */
             if (attachedObject.tag == "Top Bun")
             {
                 Debug.Log("Top Bun added on");
@@ -38,7 +30,6 @@ public class CompleteBurger : MonoBehaviour
 
     private void OnSelectExited(XRBaseInteractable interactable)
     {
-        //attachedObject = null;
         this.gameObject.tag = "Patty Cooked";
         Debug.Log("Tag changed to " + this.gameObject.tag);
     }
