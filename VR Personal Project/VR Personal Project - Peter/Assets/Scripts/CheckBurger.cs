@@ -41,6 +41,7 @@ public class CheckBurger : MonoBehaviour
             if (completepattyCheck && cheeseCheck && tomatoCheck && lettuceCheck && topBunCheck && bunCheck)
             {
                 Debug.Log("All are true at the same time. Order right!");
+                correctOrder = true; //THIS is where you can make it so points are added to player's score.
             }
             currentTime = currentTime - 1 * Time.deltaTime;
             if (currentTime <= 0)
@@ -58,6 +59,13 @@ public class CheckBurger : MonoBehaviour
             }
         }
 
+        if (correctOrder)
+        {
+            //Score - add base points + time bonus. Need scoring script, once UI start button is pressed - order ui pops up. Timer starts, 
+            //lets say 70 seconds. Just patty-25, + 5 for each additional ingredient. + The amount of seconds left on the order. Can have 
+            //a raw score like 64, or divide score by 10 or something to get tip amount like $6.40, so final score is tip money.
+        }
+
     }
 
 
@@ -66,7 +74,6 @@ public class CheckBurger : MonoBehaviour
 
         if (other.tag == "Complete Burger")
         {
-            Debug.Log("It hit complete burger");
             completepattyCheck = true;
             startChecking = true;
             startTimer();

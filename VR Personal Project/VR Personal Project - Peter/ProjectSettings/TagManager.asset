@@ -17,6 +17,8 @@ TagManager:
   - Patty Cooked
   - Complete Burger
   - Complete Lettuce
+  - Complete Tomato
+  - Complete Cheese
   layers:
   - Default
   - TransparentFX
