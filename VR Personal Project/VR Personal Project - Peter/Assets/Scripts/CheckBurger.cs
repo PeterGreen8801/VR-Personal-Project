@@ -28,6 +28,8 @@ public class CheckBurger : MonoBehaviour
     public bool lettuceCheese;
     public bool tomatoCheese;
 
+    public int orderToCheck;
+
     void Start()
     {
         startGame = GetComponent<StartGame>();
@@ -124,6 +126,9 @@ public class CheckBurger : MonoBehaviour
         {
             completepattyCheck = true;
             startChecking = true;
+            //Try getting order from startGame, then if it is orderOne or 1
+            orderToCheck = startGame.getCurrentOrder();
+            Debug.Log("Order to check for " + orderToCheck);
             startTimer();
         }
 

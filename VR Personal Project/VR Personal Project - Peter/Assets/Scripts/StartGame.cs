@@ -76,4 +76,9 @@ public class StartGame : MonoBehaviour
     {
         currentOrder = orderToSet;
     }
+
+    public bool getTimer()
+    {
+        return timerIsRunning;
+    }
 }
