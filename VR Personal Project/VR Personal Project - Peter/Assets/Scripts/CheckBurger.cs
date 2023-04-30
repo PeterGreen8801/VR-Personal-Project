@@ -19,7 +19,13 @@ public class CheckBurger : MonoBehaviour
 
     public bool startChecking;
     public bool correctOrder;
-
+    public bool orderOne;
+    public bool justLettuce;
+    public bool justTomato;
+    public bool justCheese;
+    public bool lettuceTomato;
+    public bool lettuceCheese;
+    public bool tomatoCheese;
 
     void Start()
     {
@@ -32,6 +38,13 @@ public class CheckBurger : MonoBehaviour
         topBunCheck = false;
         bunCheck = false;
         correctOrder = false;
+        orderOne = false;
+        justLettuce = false;
+        justTomato = false;
+        justCheese = false;
+        lettuceTomato = false;
+        lettuceCheese = false;
+        tomatoCheese = false;
     }
 
     void Update()
@@ -40,8 +53,35 @@ public class CheckBurger : MonoBehaviour
         {
             if (completepattyCheck && cheeseCheck && tomatoCheck && lettuceCheck && topBunCheck && bunCheck)
             {
-                Debug.Log("All are true at the same time. Order right!");
                 correctOrder = true; //THIS is where you can make it so points are added to player's score.
+            }
+            if (completepattyCheck && topBunCheck && bunCheck && !cheeseCheck && !tomatoCheck && !lettuceCheck)
+            {
+                orderOne = true;
+            }
+            if (completepattyCheck && topBunCheck && bunCheck && !cheeseCheck && !tomatoCheck && lettuceCheck)
+            {
+                justLettuce = true;
+            }
+            if (completepattyCheck && topBunCheck && bunCheck && !cheeseCheck && tomatoCheck && !lettuceCheck)
+            {
+                justTomato = true;
+            }
+            if (completepattyCheck && topBunCheck && bunCheck && cheeseCheck && !tomatoCheck && !lettuceCheck)
+            {
+                justCheese = true;
+            }
+            if (completepattyCheck && topBunCheck && bunCheck && !cheeseCheck && tomatoCheck && lettuceCheck)
+            {
+                lettuceTomato = true;
+            }
+            if (completepattyCheck && topBunCheck && bunCheck && cheeseCheck && !tomatoCheck && lettuceCheck)
+            {
+                lettuceCheese = true;
+            }
+            if (completepattyCheck && topBunCheck && bunCheck && cheeseCheck && tomatoCheck && !lettuceCheck)
+            {
+                tomatoCheese = true;
             }
             currentTime = currentTime - 1 * Time.deltaTime;
             if (currentTime <= 0)
@@ -64,6 +104,11 @@ public class CheckBurger : MonoBehaviour
             //Score - add base points + time bonus. Need scoring script, once UI start button is pressed - order ui pops up. Timer starts, 
             //lets say 70 seconds. Just patty-25, + 5 for each additional ingredient. + The amount of seconds left on the order. Can have 
             //a raw score like 64, or divide score by 10 or something to get tip amount like $6.40, so final score is tip money.
+        }
+        if (orderOne)
+        {
+            Debug.Log("Worked COrrectly!!!!!!");
+            orderOne = false;
         }
 
     }

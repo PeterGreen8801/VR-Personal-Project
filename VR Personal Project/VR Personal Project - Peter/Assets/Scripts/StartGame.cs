@@ -14,6 +14,16 @@ public class StartGame : MonoBehaviour
 
     [SerializeField]
     TextMeshProUGUI countdownText;
+
+
+    public bool correctOrder = false;
+    public bool orderOne = false;
+    public bool justLettuce = false;
+    public bool justTomato = false;
+    public bool justCheese = false;
+    public bool lettuceTomato = false;
+    public bool lettuceCheese = false;
+    public bool tomatoCheese = false;
     void Start()
     {
         currentTime = startingTime;
@@ -44,5 +54,11 @@ public class StartGame : MonoBehaviour
     public void startTimer()
     {
         timerIsRunning = true;
+    }
+
+    public void randomOrder()
+    {
+        float randomNumber = Random.Range(1, 9);
+        Debug.Log("Random number is " + randomNumber);
     }
 }
