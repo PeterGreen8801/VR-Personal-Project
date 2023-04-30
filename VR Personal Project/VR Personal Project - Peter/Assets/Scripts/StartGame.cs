@@ -24,6 +24,8 @@ public class StartGame : MonoBehaviour
     public bool lettuceTomato = false;
     public bool lettuceCheese = false;
     public bool tomatoCheese = false;
+
+    public int currentOrder = 1;
     void Start()
     {
         currentTime = startingTime;
@@ -54,11 +56,24 @@ public class StartGame : MonoBehaviour
     public void startTimer()
     {
         timerIsRunning = true;
+        randomOrder();
     }
 
     public void randomOrder()
     {
-        float randomNumber = Random.Range(1, 9);
+        int randomNumber = Random.Range(1, 9);
         Debug.Log("Random number is " + randomNumber);
+        currentOrder = randomNumber;
+        Debug.Log("Current order is " + currentOrder);
+    }
+
+    public int getCurrentOrder()
+    {
+        return currentOrder;
+    }
+
+    public void setCurrentOrder(int orderToSet)
+    {
+        currentOrder = orderToSet;
     }
 }

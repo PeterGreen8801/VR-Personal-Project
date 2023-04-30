@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheckBurger : MonoBehaviour
 {
 
+    private StartGame startGame;
     public float currentTime = 0f;
     public float startingTime = 3f;
 
@@ -29,6 +30,8 @@ public class CheckBurger : MonoBehaviour
 
     void Start()
     {
+        startGame = GetComponent<StartGame>();
+
         currentTime = startingTime;
         startChecking = false;
         completepattyCheck = false;
